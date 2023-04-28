@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animation GSAP</title>
+
+    <!-- Шрифты Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--  -->
+
+    <!-- Шрифты Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--  -->
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- -->
+
+    <!-- Доп. Скрипты-плагины. defer - принудительно в первую очередь -->
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+
+    <script src="js/app.js" defer></script>
+    <!--  -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!--  -->
+</head>
+<body>
+    <div class="wrapper">
+		<div class="content">
+            <!-- Главный экран -->
+            <header class="hero-section">
+                <img data-lag=".01" data-speed=".6" class="hero__img" src="img/hero.png" alt="hero">
+
+                <div class="container">
+                    <div data-speed=".75" class="main-header">
+                        <h1 class="main-title">Creative Stitch</h1>
+                    </div>
+                </div> <!-- /.container -->
+            </header>
+
+            <!-- Следующий блок -->
+            <div class="portfolio">
+                <div class="container">
+                    <div class="gallery">
+                        <div data-speed=".9" class="gallery__left">
+                            <img class="gallery__item" src="img/work/1.jpg" alt="work-1">
+                            <img class="gallery__item" src="img/work/2.jpg" alt="work-2">
+                            
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
+                                <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+                            </div>
+
+                            <img class="gallery__item" src="img/work/6.jpg" alt="work-6">
+                        </div> <!-- /.gallery__left -->
+
+                        <div data-speed="1.1" class="gallery__right">
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>
+                                <p class="text-block__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor amount scrolling.</p>
+                            </div>
+
+                            <img class="gallery__item" src="img/work/3.jpg" alt="work-3">
+                            <img class="gallery__item" src="img/work/4.jpg" alt="work-4">
+                            <img class="gallery__item" src="img/work/5.jpg" alt="work-5">
+                        </div> <!-- /.gallery__right -->
+                    </div> <!-- /.gallery -->
+                </div> <!-- /.container -->
+            </div> <!-- /.portfolio -->
+        </div> <!-- /.content -->
+    </div> <!-- /.wrapper -->
+</body>
+</html>
